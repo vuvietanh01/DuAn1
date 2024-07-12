@@ -15,7 +15,7 @@ public class FormSanPham extends javax.swing.JPanel {
     public FormSanPham() {
         initComponents();
         dtm = (DefaultTableModel) tbl_SP.getModel();
-        loadDataToTable();
+        loadDataToTable(); 
     }
 
     public void loadDataToTable() {
