@@ -13,7 +13,7 @@ public class SanPhamService {
     
     public ArrayList<SanPham> getToAllSanPham() {
         ArrayList<SanPham> listSanPham = new ArrayList<>();
-        String query = "SELECT Id_SanPham, Ma_SanPham, Ten_SanPham, Loai_Id, NhaSanXuat_Id, DeGiay_Id, ThuongHieu_Id, HinhAnh_Id FROM SanPham";
+        String query = "SELECT Id_SanPham, Ma_SanPham, Ten_SanPham, Loai_Id, NhaSanXuat_Id, DeGiay_Id, ThuongHieu_Id, HinhAnh_Id, TrangThai FROM SanPham";
         try {
             PreparedStatement ps = connect.prepareStatement(query);
             ResultSet rs = ps.executeQuery();
@@ -27,7 +27,8 @@ public class SanPhamService {
                     rs.getInt("NhaSanXuat_Id"),
                     rs.getInt("DeGiay_Id"),
                     rs.getInt("ThuongHieu_Id"),
-                    rs.getInt("HinhAnh_Id")
+                    rs.getInt("HinhAnh_Id"),
+                    rs.getInt("TrangThai")
                 ));
             }
         } catch (Exception e) {

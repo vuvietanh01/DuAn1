@@ -17,6 +17,7 @@ public class SanPham {
     private int deGiayId;
     private int thuongHieuId;
     private int hinhAnhId;
+    private int TrangThai;
 
     public int getIdSanPham() {
         return idSanPham;
@@ -82,7 +83,15 @@ public class SanPham {
         this.hinhAnhId = hinhAnhId;
     }
 
-    public SanPham(int idSanPham, String maSanPham, String tenSanPham, int loaiId, int nhaSanXuatId, int deGiayId, int thuongHieuId, int hinhAnhId) {
+    public int getTrangThai() {
+        return TrangThai;
+    }
+
+    public void setTrangThai(int TrangThai) {
+        this.TrangThai = TrangThai;
+    }
+
+    public SanPham(int idSanPham, String maSanPham, String tenSanPham, int loaiId, int nhaSanXuatId, int deGiayId, int thuongHieuId, int hinhAnhId, int TrangThai) {
         this.idSanPham = idSanPham;
         this.maSanPham = maSanPham;
         this.tenSanPham = tenSanPham;
@@ -91,6 +100,7 @@ public class SanPham {
         this.deGiayId = deGiayId;
         this.thuongHieuId = thuongHieuId;
         this.hinhAnhId = hinhAnhId;
+        this.TrangThai = TrangThai;
     }
 
     public SanPham() {
@@ -98,8 +108,10 @@ public class SanPham {
 
     @Override
     public String toString() {
-        return "SanPham{" + "idSanPham=" + idSanPham + ", maSanPham=" + maSanPham + ", tenSanPham=" + tenSanPham + ", loaiId=" + loaiId + ", nhaSanXuatId=" + nhaSanXuatId + ", deGiayId=" + deGiayId + ", thuongHieuId=" + thuongHieuId + ", hinhAnhId=" + hinhAnhId + '}';
+        return "SanPham{" + "idSanPham=" + idSanPham + ", maSanPham=" + maSanPham + ", tenSanPham=" + tenSanPham + ", loaiId=" + loaiId + ", nhaSanXuatId=" + nhaSanXuatId + ", deGiayId=" + deGiayId + ", thuongHieuId=" + thuongHieuId + ", hinhAnhId=" + hinhAnhId + ", TrangThai=" + TrangThai + '}';
     }
+
+    
     
     
 }
