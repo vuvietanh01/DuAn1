@@ -17,6 +17,12 @@ public class SanPham {
     private int deGiayId;
     private int thuongHieuId;
     private int hinhAnhId;
+    private int trangThai;
+    private String tenLoai;
+    private String tenNhaSanXuat;
+    private String tenDeGiay;
+    private String tenThuongHieu;
+    private String tenHinhAnh;
 
     public int getIdSanPham() {
         return idSanPham;
@@ -82,7 +88,55 @@ public class SanPham {
         this.hinhAnhId = hinhAnhId;
     }
 
-    public SanPham(int idSanPham, String maSanPham, String tenSanPham, int loaiId, int nhaSanXuatId, int deGiayId, int thuongHieuId, int hinhAnhId) {
+    public String getTrangThaiDisplay() {
+        return trangThai == 1 ? "Còn hàng" : "Hết hàng";
+    }
+
+    public void setTrangThai(int trangThai) {
+        this.trangThai = trangThai;
+    }
+
+    public String getTenLoai() {
+        return tenLoai;
+    }
+
+    public void setTenLoai(String tenLoai) {
+        this.tenLoai = tenLoai;
+    }
+
+    public String getTenNhaSanXuat() {
+        return tenNhaSanXuat;
+    }
+
+    public void setTenNhaSanXuat(String tenNhaSanXuat) {
+        this.tenNhaSanXuat = tenNhaSanXuat;
+    }
+
+    public String getTenDeGiay() {
+        return tenDeGiay;
+    }
+
+    public void setTenDeGiay(String tenDeGiay) {
+        this.tenDeGiay = tenDeGiay;
+    }
+
+    public String getTenThuongHieu() {
+        return tenThuongHieu;
+    }
+
+    public void setTenThuongHieu(String tenThuongHieu) {
+        this.tenThuongHieu = tenThuongHieu;
+    }
+
+    public String getTenHinhAnh() {
+        return tenHinhAnh;
+    }
+
+    public void setTenHinhAnh(String tenHinhAnh) {
+        this.tenHinhAnh = tenHinhAnh;
+    }
+
+    public SanPham(int idSanPham, String maSanPham, String tenSanPham, int loaiId, int nhaSanXuatId, int deGiayId, int thuongHieuId, int hinhAnhId, int trangThai, String tenLoai, String tenNhaSanXuat, String tenDeGiay, String tenThuongHieu, String tenHinhAnh) {
         this.idSanPham = idSanPham;
         this.maSanPham = maSanPham;
         this.tenSanPham = tenSanPham;
@@ -91,6 +145,12 @@ public class SanPham {
         this.deGiayId = deGiayId;
         this.thuongHieuId = thuongHieuId;
         this.hinhAnhId = hinhAnhId;
+        this.trangThai = trangThai;
+        this.tenLoai = tenLoai;
+        this.tenNhaSanXuat = tenNhaSanXuat;
+        this.tenDeGiay = tenDeGiay;
+        this.tenThuongHieu = tenThuongHieu;
+        this.tenHinhAnh = tenHinhAnh;
     }
 
     public SanPham() {
@@ -98,8 +158,11 @@ public class SanPham {
 
     @Override
     public String toString() {
-        return "SanPham{" + "idSanPham=" + idSanPham + ", maSanPham=" + maSanPham + ", tenSanPham=" + tenSanPham + ", loaiId=" + loaiId + ", nhaSanXuatId=" + nhaSanXuatId + ", deGiayId=" + deGiayId + ", thuongHieuId=" + thuongHieuId + ", hinhAnhId=" + hinhAnhId + '}';
+        return "SanPham{" + "idSanPham=" + idSanPham + ", maSanPham=" + maSanPham + ", tenSanPham=" + tenSanPham + ", loaiId=" + loaiId + ", nhaSanXuatId=" + nhaSanXuatId + ", deGiayId=" + deGiayId + ", thuongHieuId=" + thuongHieuId + ", hinhAnhId=" + hinhAnhId + ", trangThai=" + trangThai + ", tenLoai=" + tenLoai + ", tenNhaSanXuat=" + tenNhaSanXuat + ", tenDeGiay=" + tenDeGiay + ", tenThuongHieu=" + tenThuongHieu + ", tenHinhAnh=" + tenHinhAnh + '}';
     }
+
+
+    
     
     
 }
