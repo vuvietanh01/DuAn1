@@ -4,6 +4,7 @@ import component.Menu;
 import event.EventMenuSelected;
 import form.FormDashboard;
 import form.FormBanHang;
+import form.FormGiamGia;
 import form.FormQuanLyHoaDon;
 import form.FormSanPham;
 import model.ModelMenu;
@@ -56,6 +57,8 @@ public class Main extends javax.swing.JFrame {
                     showForm(new FormQuanLyHoaDon());
                 }else if (index == 3) {
                     showForm(new FormSanPham());
+                }else if(index == 4) {
+                    showForm(new FormGiamGia());
                 }
             }
         });
