@@ -15,6 +15,7 @@ public class FormGiamGia extends javax.swing.JPanel {
      */
     public FormGiamGia() {
         initComponents();
+        
     }
 
     /**

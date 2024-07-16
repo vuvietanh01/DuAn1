@@ -5,6 +5,8 @@ import event.EventMenuSelected;
 import form.Form1;
 import form.Form2;
 import form.FormGiamGia;
+import form.FormKhachHang;
+import form.FormNhanVien;
 import form.FormSanPham;
 import model.ModelMenu;
 import java.awt.BorderLayout;
@@ -56,6 +58,10 @@ public class Main extends javax.swing.JFrame {
                     showForm(new FormSanPham());
                 }else if(index == 3) {
                     showForm(new FormGiamGia());
+                }else if(index == 4) {
+                    showForm(new FormNhanVien());
+                }else if(index == 5) {
+                    showForm(new FormKhachHang());
                 }
             }
         });
