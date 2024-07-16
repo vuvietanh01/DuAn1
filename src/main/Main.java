@@ -4,6 +4,7 @@ import component.Menu;
 import event.EventMenuSelected;
 import form.Form1;
 import form.Form2;
+import form.FormGiamGia;
 import form.FormSanPham;
 import model.ModelMenu;
 import java.awt.BorderLayout;
@@ -53,6 +54,8 @@ public class Main extends javax.swing.JFrame {
                     showForm(new Form2());
                 }else if (index == 2) {
                     showForm(new FormSanPham());
+                }else if(index == 3) {
+                    showForm(new FormGiamGia());
                 }
             }
         });
